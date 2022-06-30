@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qwd-GV-wj4">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Plain StatsVC-->
+        <scene sceneID="w0b-xX-WbL">
+            <objects>
+                <tableViewController id="Qwd-GV-wj4" customClass="PlainStatsVC" customModule="EEGM_DEV" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="rWS-28-ED6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlainStatsCell" rowHeight="100" id="s3Q-ZV-vY3" customClass="PlainStatsCell" customModule="EEGM_DEV" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="s3Q-ZV-vY3" id="inp-k6-A3P">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ni-aj-vbM">
+                                            <rect key="frame" x="0.0" y="12" width="414" height="30"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00: 12min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5m-z3-SgB">
+                                                    <rect key="frame" x="8" y="4.5" width="97" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="avg:82" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xty-u8-1Po">
+                                                    <rect key="frame" x="115" y="4.5" width="291" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="45y-Q9-S1w"/>
+                                                <constraint firstItem="Xty-u8-1Po" firstAttribute="leading" secondItem="n5m-z3-SgB" secondAttribute="trailing" constant="10" id="4lL-9g-dpJ"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Xty-u8-1Po" secondAttribute="trailing" id="CcL-S5-1SP"/>
+                                                <constraint firstItem="Xty-u8-1Po" firstAttribute="centerY" secondItem="3ni-aj-vbM" secondAttribute="centerY" id="T1b-FF-m5u"/>
+                                                <constraint firstItem="n5m-z3-SgB" firstAttribute="leading" secondItem="3ni-aj-vbM" secondAttribute="leadingMargin" id="Xmj-KO-O2C"/>
+                                                <constraint firstItem="n5m-z3-SgB" firstAttribute="centerY" secondItem="3ni-aj-vbM" secondAttribute="centerY" id="Y4y-MD-gzw"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="03R-sm-KWY" customClass="LineChartView" customModule="Charts">
+                                            <rect key="frame" x="0.0" y="42" width="414" height="58"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="03R-sm-KWY" firstAttribute="top" secondItem="3ni-aj-vbM" secondAttribute="bottom" id="5i4-pK-2C1"/>
+                                        <constraint firstItem="3ni-aj-vbM" firstAttribute="top" secondItem="inp-k6-A3P" secondAttribute="top" constant="12" id="8aV-me-yFa"/>
+                                        <constraint firstAttribute="trailing" secondItem="3ni-aj-vbM" secondAttribute="trailing" id="Dfd-MR-rt6"/>
+                                        <constraint firstAttribute="bottom" secondItem="03R-sm-KWY" secondAttribute="bottom" id="Jm8-0V-JN8"/>
+                                        <constraint firstItem="03R-sm-KWY" firstAttribute="leading" secondItem="inp-k6-A3P" secondAttribute="leading" id="KmU-v9-PkN"/>
+                                        <constraint firstItem="3ni-aj-vbM" firstAttribute="leading" secondItem="inp-k6-A3P" secondAttribute="leading" id="aky-Ev-U63"/>
+                                        <constraint firstAttribute="trailing" secondItem="03R-sm-KWY" secondAttribute="trailing" id="cxQ-sE-uCc"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="avg" destination="Xty-u8-1Po" id="Hby-yV-drS"/>
+                                    <outlet property="info" destination="n5m-z3-SgB" id="DZB-50-izp"/>
+                                    <outlet property="lineChart" destination="03R-sm-KWY" id="ax0-Vu-qnu"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Qwd-GV-wj4" id="8Oc-lI-Yev"/>
+                            <outlet property="delegate" destination="Qwd-GV-wj4" id="BlH-AF-sCJ"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0xz-5l-HMi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1210" y="-1187"/>
+        </scene>
+        <!--CalendarVC-->
+        <scene sceneID="KDT-nL-yXJ">
+            <objects>
+                <viewController storyboardIdentifier="calendar-vc" id="enp-X9-Sx7" customClass="CalendarVC" customModule="EEGM_DEV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FRW-6g-AFw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="OGy-Ba-bnI" customClass="JTACMonthView" customModule="JTAppleCalendar">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="8lL-PW-gcq">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="dateCell" id="fcj-p5-Gw1" customClass="CalendarDayCell" customModule="EEGM_DEV" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="27o-si-vrk">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyText" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y39-UW-42n">
+                                                    <rect key="frame" x="36.5" y="53.5" width="55" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="y39-UW-42n" firstAttribute="centerY" secondItem="27o-si-vrk" secondAttribute="centerY" id="2HK-hj-IYb"/>
+                                                <constraint firstItem="y39-UW-42n" firstAttribute="centerX" secondItem="27o-si-vrk" secondAttribute="centerX" id="oJz-wQ-sDm"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="title" destination="y39-UW-42n" id="3lC-sB-5hz"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="ibCalendarDataSource" destination="enp-X9-Sx7" id="UZ3-Wa-M0K"/>
+                                    <outlet property="ibCalendarDelegate" destination="enp-X9-Sx7" id="iXn-wd-yo7"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="OGy-Ba-bnI" firstAttribute="top" secondItem="jBl-o1-2FU" secondAttribute="top" id="5NP-Q5-LQm"/>
+                            <constraint firstItem="jBl-o1-2FU" firstAttribute="trailing" secondItem="OGy-Ba-bnI" secondAttribute="trailing" id="RCg-E6-zg7"/>
+                            <constraint firstItem="OGy-Ba-bnI" firstAttribute="leading" secondItem="jBl-o1-2FU" secondAttribute="leading" id="hWT-br-lrY"/>
+                            <constraint firstItem="jBl-o1-2FU" firstAttribute="bottom" secondItem="OGy-Ba-bnI" secondAttribute="bottom" id="nFC-an-hMR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jBl-o1-2FU"/>
+                    </view>
+                    <connections>
+                        <outlet property="calendarView" destination="OGy-Ba-bnI" id="zjS-bM-T6f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fWb-3y-Blt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2120" y="-1171"/>
+        </scene>
+    </scenes>
+</document>

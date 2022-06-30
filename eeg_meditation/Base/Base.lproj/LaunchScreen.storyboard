@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eUL-bV-qdK">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_background" translatesAutoresizingMaskIntoConstraints="NO" id="f3R-ql-ELj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EEG Meditation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="52i-oz-4uC">
+                                <rect key="frame" x="23.666666666666657" y="414" width="367" height="68"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                <color key="textColor" red="0.21689501629336841" green="0.29137141053934618" blue="0.3598430134819629" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.90947239721485407" green="0.77374707372803808" blue="0.7090954812395428" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <size key="shadowOffset" width="-2" height="-1"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="f3R-ql-ELj" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Byr-nM-4Mk"/>
+                            <constraint firstItem="52i-oz-4uC" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="XYm-km-AGR"/>
+                            <constraint firstItem="52i-oz-4uC" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="23.5" id="b1V-Eo-zPt"/>
+                            <constraint firstItem="f3R-ql-ELj" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="emA-VH-54m"/>
+                            <constraint firstAttribute="bottom" secondItem="f3R-ql-ELj" secondAttribute="bottom" id="jQB-Qq-Azb"/>
+                            <constraint firstAttribute="trailing" secondItem="52i-oz-4uC" secondAttribute="trailing" constant="23.5" id="xOQ-RC-ECL"/>
+                            <constraint firstAttribute="trailing" secondItem="f3R-ql-ELj" secondAttribute="trailing" id="xbH-cY-7W4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GDI-gL-I4X"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+        <!--Splash ScreenVC-->
+        <scene sceneID="o0H-2z-sPr">
+            <objects>
+                <viewController id="eUL-bV-qdK" customClass="SplashScreenVC" customModule="EEGM_DEV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="psf-so-D1X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_background" translatesAutoresizingMaskIntoConstraints="NO" id="LD6-XN-oIB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EEG Meditation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="176-OA-4y8">
+                                <rect key="frame" x="23.666666666666657" y="414" width="367" height="68"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                <color key="textColor" red="0.21689501629999999" green="0.29137141049999998" blue="0.35984301349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.90947239719999995" green="0.77374707369999995" blue="0.70909548119999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <size key="shadowOffset" width="-2" height="-1"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="LD6-XN-oIB" secondAttribute="trailing" id="NhS-c8-vRK"/>
+                            <constraint firstAttribute="trailing" secondItem="176-OA-4y8" secondAttribute="trailing" constant="23.5" id="Pum-dp-frA"/>
+                            <constraint firstAttribute="bottom" secondItem="LD6-XN-oIB" secondAttribute="bottom" id="R0V-4y-iyi"/>
+                            <constraint firstItem="176-OA-4y8" firstAttribute="centerY" secondItem="psf-so-D1X" secondAttribute="centerY" id="Rll-63-jlx"/>
+                            <constraint firstItem="176-OA-4y8" firstAttribute="leading" secondItem="psf-so-D1X" secondAttribute="leading" constant="23.5" id="SjL-TG-opu"/>
+                            <constraint firstItem="LD6-XN-oIB" firstAttribute="top" secondItem="psf-so-D1X" secondAttribute="top" id="TKY-8m-xTQ"/>
+                            <constraint firstItem="LD6-XN-oIB" firstAttribute="leading" secondItem="psf-so-D1X" secondAttribute="leading" id="hG3-eU-MT2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kwJ-KP-Gx6"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L07-69-X3i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="984" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="splash_background" width="2048" height="3072"/>
+    </resources>
+</document>

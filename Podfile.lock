@@ -1,0 +1,83 @@
+PODS:
+  - Alamofire (4.9.1)
+  - AppCenter (3.1.1):
+    - AppCenter/Analytics (= 3.1.1)
+    - AppCenter/Crashes (= 3.1.1)
+  - AppCenter/Analytics (3.1.1):
+    - AppCenter/Core
+  - AppCenter/Core (3.1.1)
+  - AppCenter/Crashes (3.1.1):
+    - AppCenter/Core
+  - Charts (3.4.0):
+    - Charts/Core (= 3.4.0)
+  - Charts/Core (3.4.0)
+  - JTAppleCalendar (8.0.3)
+  - KeychainAccess (4.1.0)
+  - "NSObject+Rx (5.1.0)":
+    - RxSwift (~> 5.1)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - Sentry (4.3.1):
+    - Sentry/Core (= 4.3.1)
+  - Sentry/Core (4.3.1)
+  - Siren (5.4.0)
+  - SwiftyJSON (4.3.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - AppCenter
+  - Charts
+  - JTAppleCalendar
+  - KeychainAccess (~> 4.1)
+  - "NSObject+Rx"
+  - RxCocoa (~> 5)
+  - RxSwift (~> 5)
+  - Sentry (from `https://github.com/getsentry/sentry-cocoa.git`, tag `4.3.1`)
+  - Siren
+  - SwiftyJSON (~> 4.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AppCenter
+    - Charts
+    - JTAppleCalendar
+    - KeychainAccess
+    - "NSObject+Rx"
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - Siren
+    - SwiftyJSON
+
+EXTERNAL SOURCES:
+  Sentry:
+    :git: https://github.com/getsentry/sentry-cocoa.git
+    :tag: 4.3.1
+
+CHECKOUT OPTIONS:
+  Sentry:
+    :git: https://github.com/getsentry/sentry-cocoa.git
+    :tag: 4.3.1
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AppCenter: 513d32888854d67d8cfbd3a8db16aeb5fb2e2a75
+  Charts: 74c9f256eaf0460c0c416522d1cf8c634ea6b286
+  JTAppleCalendar: 932cadea40b1051beab10f67843451d48ba16c99
+  KeychainAccess: 445e28864fe6d3458b41fa211bcdc39890e8bd5a
+  "NSObject+Rx": fa6bbcc1ab1faa06b01466bc09b1e0692bbc5946
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  Sentry: 5267d493a398663538317e4dcc438c12c66202ed
+  Siren: 9df16ed5278cfaad7ea034f3d2206e4f6983e9b8
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+
+PODFILE CHECKSUM: a09df9e2635ae242e334f53053eba61e43bbb8aa
+
+COCOAPODS: 1.9.1

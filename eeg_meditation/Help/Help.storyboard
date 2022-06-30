@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="agf-nz-YxV">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ej8-LZ-fvi">
+            <objects>
+                <viewController id="55z-x4-wqx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rJi-8B-oSm">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tai-mv-c53">
+                                <rect key="frame" x="10" y="98" width="408" height="784"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <mutableString key="content">For the development of the mind, the NeuroSky MindWave Mobile headset, and this app can be compared to collapsible dumbbells for the development of the physical body. If you just look at dumbbells every day, touch them and watch videos on Youtube about how to do the best exercises with dumbbells, how others do these exercises and discuss these exercises with friends, there will be no progress. And even if you spend a month or two training every day, you too will not notice much improvement. In both cases, at least a few years of training are required to achieve a tangible result.
+
+The author of the app has lived more than seven years in India, spending a lot of time in ashrams of different gurus. This app is a kind of result of his search for the shortest real path to self-development.
+
+For more details, see the article:
+https://scriptures.ru/yoga/eeg-meditation-app-ios.htm</mutableString>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" metaFont="menu" size="14"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FAV-Zz-yzb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FAV-Zz-yzb" firstAttribute="bottom" secondItem="tai-mv-c53" secondAttribute="bottom" constant="10" id="IU4-qV-eD9"/>
+                            <constraint firstItem="tai-mv-c53" firstAttribute="top" secondItem="FAV-Zz-yzb" secondAttribute="top" constant="10" id="Ogn-8n-laM"/>
+                            <constraint firstItem="FAV-Zz-yzb" firstAttribute="trailing" secondItem="tai-mv-c53" secondAttribute="trailing" constant="10" id="cFF-Ww-bdb"/>
+                            <constraint firstItem="tai-mv-c53" firstAttribute="leading" secondItem="FAV-Zz-yzb" secondAttribute="leading" constant="10" id="dFK-WQ-Efv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="g8k-ku-Rso"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4me-IA-un1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="399" y="1200"/>
+        </scene>
+        <!--New Algorithm Notice-->
+        <scene sceneID="8pg-GI-FPB">
+            <objects>
+                <viewController storyboardIdentifier="NewFormulaVC" id="H4H-hE-ygv" userLabel="New Algorithm Notice" customClass="NewFormulaVC" customModule="EEGM_DEV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lVQ-eT-FxC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQv-o2-mNH">
+                                <rect key="frame" x="0.0" y="88" width="428" height="804"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qnI-8R-q9e">
+                                        <rect key="frame" x="10" y="0.0" width="408" height="1311"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Improved Meditation Recognition" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ygr-tg-hzD">
+                                                <rect key="frame" x="73" y="0.0" width="262.33333333333331" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="1pd-my-w0f"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9W-7D-A9g">
+                                                <rect key="frame" x="14.333333333333343" y="100" width="379.33333333333326" height="244"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="400" id="1ai-xc-3gW"/>
+                                                </constraints>
+                                                <attributedString key="attributedText">
+                                                    <fragment>
+                                                        <string key="content">With this release, we have added a new meditation algorithm to decipher your brain waves. This is a major improvement of a meditator's experience.
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" metaFont="system" size="18"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">
+The New Algorithm works similar to NeuroSky's built-in formula, with one big exception: it's NOT trying to adapt during the session. From now on you'll see your "honest" level!
+ Look at the screenshot, showing a session of this app's creator:</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" metaFont="system" size="18"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                            </textView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" image="newAlgorithmExample" translatesAutoresizingMaskIntoConstraints="NO" id="8kD-Qn-WzC">
+                                                <rect key="frame" x="29" y="344" width="350" height="186.66666666666663"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="350" id="a2A-LB-qDT"/>
+                                                    <constraint firstAttribute="width" secondItem="8kD-Qn-WzC" secondAttribute="height" multiplier="15:8" id="ldF-c6-quC"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qU-Hx-Whl">
+                                                <rect key="frame" x="4.6666666666666572" y="530.66666666666652" width="398.66666666666674" height="554.33333333333348"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="400" id="DJb-0j-fk7"/>
+                                                </constraints>
+                                                <attributedString key="attributedText">
+                                                    <fragment>
+                                                        <mutableString key="content">At some point, a higher level of meditation  deepness has been reached. Immediately, the Old Algorithm has increased complexity: you started getting fewer points for the same work. From this point, both algorithms almost match. The Old Algorithm will continue increasing complexity as you move deeper. 
+Instead, the New Formula helps you learn through multiple sessions. Which means:  - It will be harder to reach high levels at the beginning of a single session. No handicaps from now on.  - It will be easier to keep a high level of meditation for a long period of time - which will be your real level! Hold it and feel no frustration on long sessions!  Now you've acquired full control over your brain waves feedback. Now it's much easier to learn meditation step-by-step from the beginner's level.  For experienced meditators, we've added the Guru Mode. It increases complexity by 20 points, for tracking your deeper states. Just enable the Guru Mode in the application settings.
+
+Happy training with the New Formula!</mutableString>
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" metaFont="system" size="18"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                            </textView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uq4-bp-Sq8" userLabel="gap">
+                                                <rect key="frame" x="84" y="1085" width="240" height="25"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="qDg-ED-UnW"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="8QC-8s-MkH">
+                                                <rect key="frame" x="123.33333333333333" y="1110" width="161.66666666666669" height="73"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gew-cM-k01">
+                                                        <rect key="frame" x="39.333333333333329" y="0.0" width="83" height="38"/>
+                                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                                        <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Got It!">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="onGotItTap:" destination="H4H-hE-ygv" eventType="touchUpInside" id="60y-4X-XXN"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Frh-b5-WTd">
+                                                        <rect key="frame" x="0.0" y="42" width="161.66666666666666" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Show again next time"/>
+                                                        <connections>
+                                                            <action selector="onShowAgainTap:" destination="H4H-hE-ygv" eventType="touchUpInside" id="PNs-aI-nGF"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="350" id="w23-07-zxd"/>
+                                                </constraints>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gxu-45-Sb5" userLabel="Bottom Gap">
+                                                <rect key="frame" x="84" y="1183" width="240" height="128"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="f6V-KZ-dlQ"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="qnI-8R-q9e" secondAttribute="trailing" id="DBu-gk-Sgn"/>
+                                    <constraint firstAttribute="top" secondItem="qnI-8R-q9e" secondAttribute="top" priority="750" id="ZMp-M8-9eP"/>
+                                    <constraint firstItem="qnI-8R-q9e" firstAttribute="bottom" secondItem="YQv-o2-mNH" secondAttribute="bottom" priority="750" id="ggs-hE-iZ7"/>
+                                    <constraint firstItem="qnI-8R-q9e" firstAttribute="leading" secondItem="YQv-o2-mNH" secondAttribute="leading" id="s3K-Yh-Fu2"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Lei-fM-GDh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YQv-o2-mNH" firstAttribute="top" secondItem="Lei-fM-GDh" secondAttribute="top" id="DtA-Rh-6el"/>
+                            <constraint firstItem="YQv-o2-mNH" firstAttribute="trailing" secondItem="Lei-fM-GDh" secondAttribute="trailing" id="Fdt-Es-x9I"/>
+                            <constraint firstItem="Lei-fM-GDh" firstAttribute="trailing" secondItem="qnI-8R-q9e" secondAttribute="trailing" constant="10" id="FrF-wt-x9I"/>
+                            <constraint firstItem="Lei-fM-GDh" firstAttribute="bottom" secondItem="YQv-o2-mNH" secondAttribute="bottom" id="Jyi-Ab-5QQ"/>
+                            <constraint firstItem="YQv-o2-mNH" firstAttribute="leading" secondItem="Lei-fM-GDh" secondAttribute="leading" id="NV0-m4-fOF"/>
+                            <constraint firstItem="qnI-8R-q9e" firstAttribute="leading" secondItem="Lei-fM-GDh" secondAttribute="leading" constant="10" id="rhh-3U-QZg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ryy-nc-7eq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jNI-rq-gIm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-479" y="1390"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ciJ-4S-0gg">
+            <objects>
+                <viewController id="AUp-o4-vVs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r8A-V9-TXa">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fFK-6d-DGL">
+                                <rect key="frame" x="10" y="98" width="408" height="784"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Make sure you've read the help &amp; checked the community to solve typical beginner issues: 
+English-spoken group on Facebook:
+https://www.facebook.com/groups/neuromeditations/
+
+Russian-spoken group on Facebook:
+https://www.facebook.com/groups/eeg.meditation/
+
+---------------------
+ EEG Meditation for iOS developer:
+E-mail: highcatland@gmail.com 
+The author of the idea, evangelist, and prototype app developer:
+E-mail: vasylvern@gmail.com
+</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sWp-ih-EaV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sWp-ih-EaV" firstAttribute="bottom" secondItem="fFK-6d-DGL" secondAttribute="bottom" constant="10" id="Es5-rf-21L"/>
+                            <constraint firstItem="sWp-ih-EaV" firstAttribute="trailing" secondItem="fFK-6d-DGL" secondAttribute="trailing" constant="10" id="XHj-Pd-hGD"/>
+                            <constraint firstItem="fFK-6d-DGL" firstAttribute="top" secondItem="sWp-ih-EaV" secondAttribute="top" constant="10" id="jS8-gR-LmW"/>
+                            <constraint firstItem="fFK-6d-DGL" firstAttribute="leading" secondItem="sWp-ih-EaV" secondAttribute="leading" constant="10" id="vtO-gn-mVi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5bJ-gd-2dG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5D7-Q1-uFf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1392" y="1346"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7I3-ts-pqd">
+            <objects>
+                <viewController id="p8l-3b-PWb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vsd-GL-IHk">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bOw-Jb-IXb">
+                                <rect key="frame" x="10" y="98" width="408" height="784"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <mutableString key="content">EEG Meditation
+
+This app works with the NeuroSky MindWave Mobile headset.
+
+Turn on the headset and press the Connect button.
+Stop your internal monologue for meditation.
+Try to close your eyes for better meditation.
+ 
+For faster progress, it is better to choose such a meditation level threshold for the sound signal so that you hear it about 1/2 of the time or less. It is better to reduce the sound volume to a barely audible one. After the beginning of the meditation session, you can turn off the screen (by briefly pressing the power button) to save the battery and track only the sound. If the quality of the headset signal has often become poor, try wiping three metal sensors: forehead and two on the ear clip. Make sure your skin is clean. Use rubbing alcohol or medical disinfection pad for injection. Try to remove all other Bluetooth pairings if the headset connects for more than 5 seconds. Also, select your grid frequency in the app settings so that the headset is able to remove the interference. Generally, it's 50 Hz for Eurasia, 60 Hz for America.
+
+For more details, see the article:
+https://scriptures.ru/yoga/eeg-meditation-app-ios.htm
+
+Article in Russian: https://scriptures.ru/yoga/eeg_meditation.htm
+
+E-mail: vasylvern@gmail.com
+ 
+EEG Meditation for iOS is developed by Alex Lokk:
+https://highcat.org
+E-mail: highcatland@gmail.com</mutableString>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="darkTextColor"/>
+                                            <font key="NSFont" metaFont="menu" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="825-Th-2HN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bOw-Jb-IXb" firstAttribute="top" secondItem="825-Th-2HN" secondAttribute="top" constant="10" id="5ha-CJ-jVy"/>
+                            <constraint firstItem="825-Th-2HN" firstAttribute="trailing" secondItem="bOw-Jb-IXb" secondAttribute="trailing" constant="10" id="6Ca-Yj-rw7"/>
+                            <constraint firstItem="825-Th-2HN" firstAttribute="bottom" secondItem="bOw-Jb-IXb" secondAttribute="bottom" constant="10" id="Zk3-fg-eQY"/>
+                            <constraint firstItem="bOw-Jb-IXb" firstAttribute="leading" secondItem="825-Th-2HN" secondAttribute="leading" constant="10" id="btX-7w-cZg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xJS-Hi-iwd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lng-0l-qji" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1335" y="639"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8AV-ff-I0i">
+            <objects>
+                <viewController id="x8o-Aq-Erk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CzM-CZ-Qn0">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vdW-s3-Xoi">
+                                <rect key="frame" x="10" y="98" width="408" height="784"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">English-spoken group on Facebook:
+https://www.facebook.com/groups/neuromeditations/
+
+Russian-spoken group on Facebook:
+https://www.facebook.com/groups/eeg.meditation/</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="APr-EF-MP4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vdW-s3-Xoi" firstAttribute="top" secondItem="APr-EF-MP4" secondAttribute="top" constant="10" id="NmM-ce-Rbj"/>
+                            <constraint firstItem="APr-EF-MP4" firstAttribute="trailing" secondItem="vdW-s3-Xoi" secondAttribute="trailing" constant="10" id="O2y-P4-SGX"/>
+                            <constraint firstItem="vdW-s3-Xoi" firstAttribute="leading" secondItem="APr-EF-MP4" secondAttribute="leading" constant="10" id="Xct-na-OF6"/>
+                            <constraint firstItem="APr-EF-MP4" firstAttribute="bottom" secondItem="vdW-s3-Xoi" secondAttribute="bottom" constant="10" id="m18-hx-nSh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hTl-KM-JLg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sTB-CQ-jKd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2375" y="818"/>
+        </scene>
+        <!--Help / About-->
+        <scene sceneID="b7H-k2-Axz">
+            <objects>
+                <tableViewController id="Vyn-hf-YQy" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7Qj-wS-v9T">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="RIL-sH-Vqs">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="E9L-ev-uQV" style="IBUITableViewCellStyleDefault" id="Cg9-o2-LUg">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="428" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cg9-o2-LUg" id="UOo-Zn-362">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="How to use the EEG Meditation app" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="E9L-ev-uQV">
+                                                    <rect key="frame" x="20" y="0.0" width="388" height="43.666667938232422"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="p8l-3b-PWb" kind="show" id="gjX-Pz-uDk"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="DCe-xf-h8m" style="IBUITableViewCellStyleDefault" id="5rx-kI-XIe">
+                                        <rect key="frame" x="0.0" y="88.333333969116211" width="428" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5rx-kI-XIe" id="4nf-ZT-DS8">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Our Meditation Formula" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DCe-xf-h8m">
+                                                    <rect key="frame" x="20" y="0.0" width="388" height="43.666667938232422"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="H4H-hE-ygv" kind="show" id="ld9-re-Lbn"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="LRs-2l-3Z9" style="IBUITableViewCellStyleDefault" id="Kzx-2s-ol8">
+                                        <rect key="frame" x="0.0" y="132.00000190734863" width="428" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kzx-2s-ol8" id="tZ8-Oo-CYt">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="The idea of the app" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LRs-2l-3Z9">
+                                                    <rect key="frame" x="20" y="0.0" width="388" height="43.666667938232422"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="55z-x4-wqx" kind="show" id="P82-9a-l5s"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="8nN-Kv-ua2" style="IBUITableViewCellStyleDefault" id="UoL-5a-wOQ">
+                                        <rect key="frame" x="0.0" y="175.66666984558105" width="428" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UoL-5a-wOQ" id="41E-BZ-zN0">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Join the community" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8nN-Kv-ua2">
+                                                    <rect key="frame" x="20" y="0.0" width="388" height="43.666667938232422"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="x8o-Aq-Erk" kind="show" id="Nag-AY-cfQ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="m1a-Yb-aba" style="IBUITableViewCellStyleDefault" id="QFV-GJ-4a8">
+                                        <rect key="frame" x="0.0" y="219.33333778381348" width="428" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QFV-GJ-4a8" id="Wl1-XA-d1R">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Report issue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="m1a-Yb-aba">
+                                                    <rect key="frame" x="20" y="0.0" width="388" height="43.666667938232422"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="AUp-o4-vVs" kind="show" id="76H-uM-kRJ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Vyn-hf-YQy" id="qYN-AY-vGX"/>
+                            <outlet property="delegate" destination="Vyn-hf-YQy" id="Tir-tZ-IB1"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Help / About" id="yz3-IJ-Zak">
+                        <barButtonItem key="leftBarButtonItem" title="Back" style="done" id="8sf-Ym-qf0">
+                            <connections>
+                                <segue destination="AgA-eV-SUj" kind="unwind" unwindAction="backToSegue:" id="gHe-4E-b4q"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WCm-P1-Uh3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="AgA-eV-SUj" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="7" y="485"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jgk-c1-dUa">
+            <objects>
+                <navigationController id="agf-nz-YxV" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="47y-uX-jvD">
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Vyn-hf-YQy" kind="relationship" relationship="rootViewController" id="ghd-qp-DLp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2jl-fV-jeG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-873" y="439"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kNR-Ei-40h">
+            <objects>
+                <viewController id="lPH-P2-Wln" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sD7-X4-l8i">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="wJg-kK-gnk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aNm-sj-F7V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1997" y="140"/>
+        </scene>
+        <!--Help / About-->
+        <scene sceneID="q3a-0e-vdx">
+            <objects>
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="4V9-DL-ph7" customClass="HelpVC" customModule="EEGM_DEV" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6Pa-uI-Msz">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="yh4-SL-MzY">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="OuP-90-XYL">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="428" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OuP-90-XYL" id="Sbz-1G-bKB">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYb-SZ-sdv">
+                                                    <rect key="frame" x="348" y="6" width="46" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <segue destination="lPH-P2-Wln" kind="showDetail" id="xIn-eZ-z9x"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="e0A-eH-b0G">
+                                        <rect key="frame" x="0.0" y="88.333333969116211" width="428" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e0A-eH-b0G" id="P1O-uU-DRH">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CmW-5v-SUw">
+                                                    <rect key="frame" x="161" y="7" width="106" height="30"/>
+                                                    <state key="normal" title="Launch Tutorial"/>
+                                                    <connections>
+                                                        <segue destination="nnC-Rp-r5f" kind="unwind" customClass="LaunchTutorialSegue" customModule="EEGM_DEV" customModuleProvider="target" unwindAction="backToSegue:" id="za9-xA-niV"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="CmW-5v-SUw" firstAttribute="centerY" secondItem="P1O-uU-DRH" secondAttribute="centerY" id="NbM-k1-5QZ"/>
+                                                <constraint firstItem="CmW-5v-SUw" firstAttribute="centerX" secondItem="P1O-uU-DRH" secondAttribute="centerX" id="hso-pi-hdK"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="gpY-KN-ODv">
+                                        <rect key="frame" x="0.0" y="132.00000190734863" width="428" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gpY-KN-ODv" id="HwR-6Y-pwn">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZ6-t4-dUb">
+                                                    <rect key="frame" x="147.66666666666666" y="7" width="132.99999999999997" height="30"/>
+                                                    <state key="normal" title="The idea of the app"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="AZ6-t4-dUb" firstAttribute="centerX" secondItem="HwR-6Y-pwn" secondAttribute="centerX" id="8rP-Nz-pIQ"/>
+                                                <constraint firstItem="AZ6-t4-dUb" firstAttribute="centerY" secondItem="HwR-6Y-pwn" secondAttribute="centerY" id="PgG-Fu-TIe"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="4V9-DL-ph7" id="ggj-Rr-zpJ"/>
+                            <outlet property="delegate" destination="4V9-DL-ph7" id="ydX-A1-YzO"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Help / About" id="mXG-tq-Gae"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tz7-7c-lb6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="nnC-Rp-r5f" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1055" y="-270"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qQT-3r-Hhe">
+            <objects>
+                <navigationController id="ktJ-eI-QvS" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Kqa-n7-jdY">
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="4V9-DL-ph7" kind="relationship" relationship="rootViewController" id="r9c-nC-dMq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kfA-lY-c20" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136" y="-270"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="uz7-lg-acC">
+            <objects>
+                <splitViewController id="Fhb-6Z-ERY" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="ktJ-eI-QvS" kind="relationship" relationship="masterViewController" id="CLV-6J-uwX"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lOi-Vc-eyJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-797" y="-277"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="newAlgorithmExample" width="414" height="215"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

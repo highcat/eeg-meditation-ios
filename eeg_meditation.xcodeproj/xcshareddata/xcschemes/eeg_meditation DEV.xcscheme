@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "1140"
+   version = "1.7">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <PreActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "# FIXME action variable is missing? this should run for &quot;archive&quot; only.&#10;&#10;if [ $CONFIGURATION == &apos;Debug&apos; ]; then exit 0; fi&#10;&#10;BUILD_CONFIRM_SCRIPT=&quot;&#10;   try&#10;      tell application \&quot;Xcode\&quot; to display dialog \&quot;Never archive from DEV environment!\&quot; with title \&quot;Stop!\&quot; with icon caution&#10;      return \&quot;ok\&quot;&#10;   on error&#10;      return \&quot;\&quot;&#10;   end try&#10;&quot;&#10;BUILD_CONFIRM_RESULT=`osascript -e &quot;$BUILD_CONFIRM_SCRIPT&quot;`&#10;if [[ $BUILD_CONFIRM_RESULT == &apos;ok&apos; ]]; then&#10;   exit 0&#10;else&#10;   echo &quot;*** Aborting the script&quot;&#10;   exit 1&#10;fi&#10;&#10;">
+               <EnvironmentBuildable>
+                  <BuildableReference
+                     BuildableIdentifier = "primary"
+                     BlueprintIdentifier = "8433746923701F4200737FC6"
+                     BuildableName = "EEG Meditation.app"
+                     BlueprintName = "eeg_meditation"
+                     ReferencedContainer = "container:eeg_meditation.xcodeproj">
+                  </BuildableReference>
+               </EnvironmentBuildable>
+            </ActionContent>
+         </ExecutionAction>
+      </PreActions>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "8433746923701F4200737FC6"
+               BuildableName = "EEG Meditation.app"
+               BlueprintName = "eeg_meditation"
+               ReferencedContainer = "container:eeg_meditation.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+      </Testables>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "8433746923701F4200737FC6"
+            BuildableName = "EEG Meditation.app"
+            BlueprintName = "eeg_meditation"
+            ReferencedContainer = "container:eeg_meditation.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "8433746923701F4200737FC6"
+            BuildableName = "EEG Meditation.app"
+            BlueprintName = "eeg_meditation"
+            ReferencedContainer = "container:eeg_meditation.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "NO">
+   </ArchiveAction>
+</Scheme>

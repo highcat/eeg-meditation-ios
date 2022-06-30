@@ -1,0 +1,796 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8406F81324533E810099A2E2 /* Help.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8406F81224533E810099A2E2 /* Help.storyboard */; };
+		8406F817245345730099A2E2 /* CalendarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406F816245345730099A2E2 /* CalendarHeaderView.swift */; };
+		840BBBB224587BAD00107A3D /* libMWMSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 840BBBB124587BAD00107A3D /* libMWMSDK.a */; };
+		840BBBB4246083F800107A3D /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840BBBB3246083F800107A3D /* ExternalAccessory.framework */; };
+		840CB5FD24531A6300399ACA /* Settings1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CB5FC24531A6300399ACA /* Settings1VC.swift */; };
+		8422B31A274EA0730069BF71 /* vasyl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422B319274EA0730069BF71 /* vasyl.swift */; };
+		842850C82774B84600B6AD1E /* NewFormulaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842850C72774B84600B6AD1E /* NewFormulaVC.swift */; };
+		842D2D07242FE6C900938439 /* MeditationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D2D06242FE6C900938439 /* MeditationSession.swift */; };
+		842E94BE2458552E003287CE /* MeditationSession+example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842E94BD2458552E003287CE /* MeditationSession+example.swift */; };
+		8433746E23701F4200737FC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8433746D23701F4200737FC6 /* AppDelegate.swift */; };
+		8433747223701F4200737FC6 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8433747123701F4200737FC6 /* MainVC.swift */; };
+		8433747523701F4200737FC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8433747323701F4200737FC6 /* Main.storyboard */; };
+		8433747823701F4200737FC6 /* eeg_meditation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8433747623701F4200737FC6 /* eeg_meditation.xcdatamodeld */; };
+		8433747A23701F4300737FC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8433747923701F4300737FC6 /* Assets.xcassets */; };
+		8433747D23701F4300737FC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8433747B23701F4300737FC6 /* LaunchScreen.storyboard */; };
+		8446A42423F4880300274E52 /* HeadsetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8446A42323F4880300274E52 /* HeadsetController.swift */; };
+		845180FE23F5ADB500A52F32 /* notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845180FD23F5ADB500A52F32 /* notifications.swift */; };
+		8451810023F5B55900A52F32 /* Permissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845180FF23F5B55900A52F32 /* Permissions.swift */; };
+		845FA53B24574860000C4A79 /* Pods_eeg_meditation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552E604BF13883AB542A7040 /* Pods_eeg_meditation.framework */; };
+		84645B5224538203007DEB95 /* HelpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84645B5124538203007DEB95 /* HelpVC.swift */; };
+		8468AD132440F66700D06BE8 /* CalendarDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468AD122440F66700D06BE8 /* CalendarDateCell.swift */; };
+		8468AD152440F7C100D06BE8 /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468AD142440F7C100D06BE8 /* CalendarVC.swift */; };
+		848399282475B61A00DB1A49 /* PlainStatsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848399272475B61A00DB1A49 /* PlainStatsVC.swift */; };
+		84891E28244B21AA00A5ABBE /* MainVC+showChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84891E27244B21AA00A5ABBE /* MainVC+showChart.swift */; };
+		84891E2A244B221B00A5ABBE /* MainVC+HeadsetControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84891E29244B221B00A5ABBE /* MainVC+HeadsetControllerDelegate.swift */; };
+		84891E2C244B22BE00A5ABBE /* MainVC+clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84891E2B244B22BE00A5ABBE /* MainVC+clock.swift */; };
+		84891E2E244B230E00A5ABBE /* MainVC+timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84891E2D244B230E00A5ABBE /* MainVC+timer.swift */; };
+		84891E30244B235D00A5ABBE /* MainVC+meditationSessionActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84891E2F244B235D00A5ABBE /* MainVC+meditationSessionActions.swift */; };
+		8496D19E23E889BD00156BAD /* DistractionCounterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496D19D23E889BD00156BAD /* DistractionCounterVC.swift */; };
+		849FA3672450D2BD00420D00 /* MainVC+segueing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849FA3662450D2BD00420D00 /* MainVC+segueing.swift */; };
+		849FB8D023D8ADBC00884FFC /* ui.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849FB8CF23D8ADBC00884FFC /* ui.swift */; };
+		849FB8D223D8B09900884FFC /* uicolor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849FB8D123D8B09900884FFC /* uicolor.swift */; };
+		849FE818244A39AF00DCE2D9 /* PublishedProperties_CombineLike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849FE817244A39AF00DCE2D9 /* PublishedProperties_CombineLike.swift */; };
+		84A3A993245781B80030388A /* MWMSdkStub.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A3A992245781B70030388A /* MWMSdkStub.m */; };
+		84A3A995245786C80030388A /* MainVC+debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3A994245786C80030388A /* MainVC+debug.swift */; };
+		84A7FFE623F5BD9400BE48EC /* HeadsetControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A7FFE523F5BD9400BE48EC /* HeadsetControllerDelegate.swift */; };
+		84B1124E24A0EB6700A13ABF /* MainVC+sharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1124D24A0EB6700A13ABF /* MainVC+sharing.swift */; };
+		84BBC7FF286DD3BF000C5AAF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBC7FE286DD3BF000C5AAF /* Constants.swift */; };
+		84C14AD12444DDBA009B416C /* SimpleTouchGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C14AD02444DDBA009B416C /* SimpleTouchGestureRecognizer.swift */; };
+		84CDB2662475B748001DFD8C /* Stats.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CDB2652475B748001DFD8C /* Stats.storyboard */; };
+		84CDB2682475BC98001DFD8C /* PlainStatsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CDB2672475BC98001DFD8C /* PlainStatsCell.swift */; };
+		84CDB26B2475C3D3001DFD8C /* SessionChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CDB26A2475C3D3001DFD8C /* SessionChart.swift */; };
+		84CDB26D2475CB6D001DFD8C /* secondsToHMS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CDB26C2475CB6D001DFD8C /* secondsToHMS.swift */; };
+		84D18C3B24A0F12D0085E10A /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D18C3A24A0F12D0085E10A /* SplashScreenVC.swift */; };
+		84EC8BC42452033800CCCB53 /* MeditationSession+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC8BC32452033800CCCB53 /* MeditationSession+API.swift */; };
+		84EC8BC62452034D00CCCB53 /* MeditationSession+conversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC8BC52452034D00CCCB53 /* MeditationSession+conversions.swift */; };
+		84EC8BC8245207D000CCCB53 /* SettingsCareTaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC8BC7245207D000CCCB53 /* SettingsCareTaker.swift */; };
+		84EC8BCA24520FB500CCCB53 /* MeditationSession+statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC8BC924520FB500CCCB53 /* MeditationSession+statistics.swift */; };
+		84F86FFC2445E27200089304 /* SoundCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F86FFB2445E27200089304 /* SoundCenter.swift */; };
+		84F86FFE2445E29200089304 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F86FFD2445E29200089304 /* SettingsModel.swift */; };
+		8E77F75F0105BFBD47E2D9BB /* AssetsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18374B224C53A25636047CDF /* AssetsUtils.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		18374B224C53A25636047CDF /* AssetsUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsUtils.swift; sourceTree = "<group>"; };
+		552E604BF13883AB542A7040 /* Pods_eeg_meditation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eeg_meditation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8406F81224533E810099A2E2 /* Help.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Help.storyboard; sourceTree = "<group>"; };
+		8406F816245345730099A2E2 /* CalendarHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarHeaderView.swift; sourceTree = "<group>"; };
+		840BBBB124587BAD00107A3D /* libMWMSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMWMSDK.a; path = MWMSdk/iOS/libMWMSDK.a; sourceTree = "<group>"; };
+		840BBBB3246083F800107A3D /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		840CB5FC24531A6300399ACA /* Settings1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings1VC.swift; sourceTree = "<group>"; };
+		8422B319274EA0730069BF71 /* vasyl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vasyl.swift; sourceTree = "<group>"; };
+		8427E1BF23C6354100091041 /* AlgoSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlgoSdk.framework; sourceTree = "<group>"; };
+		8427E1C423C636FC00091041 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		8427E1C623C6395D00091041 /* MWMEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMEnum.h; sourceTree = "<group>"; };
+		8427E1C723C6395D00091041 /* MWMDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMDelegate.h; sourceTree = "<group>"; };
+		8427E1C823C6395D00091041 /* MWMDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMDevice.h; sourceTree = "<group>"; };
+		8427E1C923C6395D00091041 /* libMWMSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMWMSDK.a; sourceTree = "<group>"; };
+		842850C72774B84600B6AD1E /* NewFormulaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFormulaVC.swift; sourceTree = "<group>"; };
+		842D2D05242E8E4A00938439 /* eeg_meditation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = eeg_meditation.entitlements; sourceTree = "<group>"; };
+		842D2D06242FE6C900938439 /* MeditationSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationSession.swift; sourceTree = "<group>"; };
+		842E94BD2458552E003287CE /* MeditationSession+example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeditationSession+example.swift"; sourceTree = "<group>"; };
+		8433746A23701F4200737FC6 /* EEGM DEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EEGM DEV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8433746D23701F4200737FC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8433747123701F4200737FC6 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		8433747423701F4200737FC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8433747723701F4200737FC6 /* eeg_meditation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = eeg_meditation.xcdatamodel; sourceTree = "<group>"; };
+		8433747923701F4300737FC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8433747C23701F4300737FC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8433747E23701F4300737FC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8446A42323F4880300274E52 /* HeadsetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadsetController.swift; sourceTree = "<group>"; };
+		845180FD23F5ADB500A52F32 /* notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notifications.swift; sourceTree = "<group>"; };
+		845180FF23F5B55900A52F32 /* Permissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permissions.swift; sourceTree = "<group>"; };
+		84645B5124538203007DEB95 /* HelpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpVC.swift; sourceTree = "<group>"; };
+		8468AD122440F66700D06BE8 /* CalendarDateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDateCell.swift; sourceTree = "<group>"; };
+		8468AD142440F7C100D06BE8 /* CalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
+		848399272475B61A00DB1A49 /* PlainStatsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainStatsVC.swift; sourceTree = "<group>"; };
+		84891E27244B21AA00A5ABBE /* MainVC+showChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainVC+showChart.swift"; sourceTree = "<group>"; };
+		84891E29244B221B00A5ABBE /* MainVC+HeadsetControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainVC+HeadsetControllerDelegate.swift"; sourceTree = "<group>"; };
+		84891E2B244B22BE00A5ABBE /* MainVC+clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainVC+clock.swift"; sourceTree = "<group>"; };
+		84891E2D244B230E00A5ABBE /* MainVC+timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainVC+timer.swift"; sourceTree = "<group>"; };
+		84891E2F244B235D00A5ABBE /* MainVC+meditationSessionActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainVC+meditationSessionActions.swift"; sourceTree = "<group>"; };
+		8496D19D23E889BD00156BAD /* DistractionCounterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistractionCounterVC.swift; sourceTree = "<group>"; };
+		849FA3662450D2BD00420D00 /* MainVC+segueing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainVC+segueing.swift"; sourceTree = "<group>"; };
+		849FB8CD23D6566400884FFC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = eeg_meditation/BaseFiles/README.md; sourceTree = SOURCE_ROOT; };
+		849FB8CF23D8ADBC00884FFC /* ui.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ui.swift; sourceTree = "<group>"; };
+		849FB8D123D8B09900884FFC /* uicolor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uicolor.swift; sourceTree = "<group>"; };
+		849FE817244A39AF00DCE2D9 /* PublishedProperties_CombineLike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishedProperties_CombineLike.swift; sourceTree = "<group>"; };
+		84A3A992245781B70030388A /* MWMSdkStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWMSdkStub.m; sourceTree = "<group>"; };
+		84A3A994245786C80030388A /* MainVC+debug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainVC+debug.swift"; sourceTree = "<group>"; };
+		84A7FFE523F5BD9400BE48EC /* HeadsetControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadsetControllerDelegate.swift; sourceTree = "<group>"; };
+		84B1124D24A0EB6700A13ABF /* MainVC+sharing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainVC+sharing.swift"; sourceTree = "<group>"; };
+		84BBC7FD286DCFBC000C5AAF /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		84BBC7FE286DD3BF000C5AAF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		84BBC802286DD7FC000C5AAF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
+		84C14AD02444DDBA009B416C /* SimpleTouchGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTouchGestureRecognizer.swift; sourceTree = "<group>"; };
+		84CDB2652475B748001DFD8C /* Stats.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Stats.storyboard; sourceTree = "<group>"; };
+		84CDB2672475BC98001DFD8C /* PlainStatsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainStatsCell.swift; sourceTree = "<group>"; };
+		84CDB26A2475C3D3001DFD8C /* SessionChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionChart.swift; sourceTree = "<group>"; };
+		84CDB26C2475CB6D001DFD8C /* secondsToHMS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondsToHMS.swift; sourceTree = "<group>"; };
+		84D18C3A24A0F12D0085E10A /* SplashScreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
+		84EC8BC32452033800CCCB53 /* MeditationSession+API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeditationSession+API.swift"; sourceTree = "<group>"; };
+		84EC8BC52452034D00CCCB53 /* MeditationSession+conversions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeditationSession+conversions.swift"; sourceTree = "<group>"; };
+		84EC8BC7245207D000CCCB53 /* SettingsCareTaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCareTaker.swift; sourceTree = "<group>"; };
+		84EC8BC924520FB500CCCB53 /* MeditationSession+statistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeditationSession+statistics.swift"; sourceTree = "<group>"; };
+		84F86FFB2445E27200089304 /* SoundCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundCenter.swift; sourceTree = "<group>"; };
+		84F86FFD2445E29200089304 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		A58FA966DA9EA7210E2103F8 /* Pods-eeg_meditation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eeg_meditation.debug.xcconfig"; path = "Target Support Files/Pods-eeg_meditation/Pods-eeg_meditation.debug.xcconfig"; sourceTree = "<group>"; };
+		FE4A730A200DC0283FBD6D1A /* Pods-eeg_meditation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eeg_meditation.release.xcconfig"; path = "Target Support Files/Pods-eeg_meditation/Pods-eeg_meditation.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8433746723701F4200737FC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840BBBB4246083F800107A3D /* ExternalAccessory.framework in Frameworks */,
+				840BBBB224587BAD00107A3D /* libMWMSDK.a in Frameworks */,
+				845FA53B24574860000C4A79 /* Pods_eeg_meditation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BA2EBBAE4D4CE1C044A94F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				840BBBB3246083F800107A3D /* ExternalAccessory.framework */,
+				840BBBB124587BAD00107A3D /* libMWMSDK.a */,
+				552E604BF13883AB542A7040 /* Pods_eeg_meditation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		40D289D597FC5B531ECB53CC /* HappyCodingSupport */ = {
+			isa = PBXGroup;
+			children = (
+				18374B224C53A25636047CDF /* AssetsUtils.swift */,
+			);
+			path = HappyCodingSupport;
+			sourceTree = "<group>";
+		};
+		8406F81124533E5E0099A2E2 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				8406F81224533E810099A2E2 /* Help.storyboard */,
+				84645B5124538203007DEB95 /* HelpVC.swift */,
+				842850C72774B84600B6AD1E /* NewFormulaVC.swift */,
+			);
+			path = Help;
+			sourceTree = "<group>";
+		};
+		8406F8142453441D0099A2E2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8446A42323F4880300274E52 /* HeadsetController.swift */,
+				84A7FFE523F5BD9400BE48EC /* HeadsetControllerDelegate.swift */,
+				845180FF23F5B55900A52F32 /* Permissions.swift */,
+				84F86FFB2445E27200089304 /* SoundCenter.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8406F815245344410099A2E2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84C14AD02444DDBA009B416C /* SimpleTouchGestureRecognizer.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8422B318274EA05D0069BF71 /* MeditationAlgorithm */ = {
+			isa = PBXGroup;
+			children = (
+				8422B319274EA0730069BF71 /* vasyl.swift */,
+			);
+			path = MeditationAlgorithm;
+			sourceTree = "<group>";
+		};
+		8427E1C523C6395D00091041 /* MWMSdk */ = {
+			isa = PBXGroup;
+			children = (
+				8427E1C623C6395D00091041 /* MWMEnum.h */,
+				8427E1C723C6395D00091041 /* MWMDelegate.h */,
+				8427E1C823C6395D00091041 /* MWMDevice.h */,
+				8427E1C923C6395D00091041 /* libMWMSDK.a */,
+			);
+			path = MWMSdk;
+			sourceTree = "<group>";
+		};
+		842D2D092438F28600938439 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				842D2D05242E8E4A00938439 /* eeg_meditation.entitlements */,
+				8433746D23701F4200737FC6 /* AppDelegate.swift */,
+				84BBC7FE286DD3BF000C5AAF /* Constants.swift */,
+				8433747923701F4300737FC6 /* Assets.xcassets */,
+				8433747B23701F4300737FC6 /* LaunchScreen.storyboard */,
+				8433747E23701F4300737FC6 /* Info.plist */,
+				8433747623701F4200737FC6 /* eeg_meditation.xcdatamodeld */,
+				849FB8CD23D6566400884FFC /* README.md */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		8433746123701F4200737FC6 = {
+			isa = PBXGroup;
+			children = (
+				84BBC802286DD7FC000C5AAF /* README.md */,
+				84BBC7FD286DCFBC000C5AAF /* LICENSE.md */,
+				8427E1C423C636FC00091041 /* Bridging-Header.h */,
+				84A3A992245781B70030388A /* MWMSdkStub.m */,
+				8433746C23701F4200737FC6 /* eeg_meditation */,
+				8433746B23701F4200737FC6 /* Products */,
+				8427E1C523C6395D00091041 /* MWMSdk */,
+				8427E1BF23C6354100091041 /* AlgoSdk.framework */,
+				EEF05075C5B9BD6D2ED3B781 /* Pods */,
+				2BA2EBBAE4D4CE1C044A94F7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8433746B23701F4200737FC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8433746A23701F4200737FC6 /* EEGM DEV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8433746C23701F4200737FC6 /* eeg_meditation */ = {
+			isa = PBXGroup;
+			children = (
+				849FB8CE23D8ADAC00884FFC /* extensions */,
+				8446A42623F48A9300274E52 /* Core */,
+				848399262475B5FC00DB1A49 /* Stats */,
+				8406F81124533E5E0099A2E2 /* Help */,
+				842D2D092438F28600938439 /* Base */,
+				40D289D597FC5B531ECB53CC /* HappyCodingSupport */,
+			);
+			path = eeg_meditation;
+			sourceTree = "<group>";
+		};
+		8446A42523F48A7600274E52 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				84D18C3A24A0F12D0085E10A /* SplashScreenVC.swift */,
+				8433747123701F4200737FC6 /* MainVC.swift */,
+				849FA3662450D2BD00420D00 /* MainVC+segueing.swift */,
+				84891E2F244B235D00A5ABBE /* MainVC+meditationSessionActions.swift */,
+				84891E29244B221B00A5ABBE /* MainVC+HeadsetControllerDelegate.swift */,
+				84891E2B244B22BE00A5ABBE /* MainVC+clock.swift */,
+				84891E27244B21AA00A5ABBE /* MainVC+showChart.swift */,
+				84891E2D244B230E00A5ABBE /* MainVC+timer.swift */,
+				84B1124D24A0EB6700A13ABF /* MainVC+sharing.swift */,
+				84A3A994245786C80030388A /* MainVC+debug.swift */,
+				8496D19D23E889BD00156BAD /* DistractionCounterVC.swift */,
+				840CB5FC24531A6300399ACA /* Settings1VC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8446A42623F48A9300274E52 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8433747323701F4200737FC6 /* Main.storyboard */,
+				84BF260B24461A7800873D4B /* Models */,
+				8422B318274EA05D0069BF71 /* MeditationAlgorithm */,
+				84CDB2692475C3AA001DFD8C /* ViewModels */,
+				8406F815245344410099A2E2 /* Views */,
+				8406F8142453441D0099A2E2 /* Controllers */,
+				8446A42523F48A7600274E52 /* ViewControllers */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8468AD18244100CE00D06BE8 /* ProgressCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				8406F816245345730099A2E2 /* CalendarHeaderView.swift */,
+				8468AD122440F66700D06BE8 /* CalendarDateCell.swift */,
+				8468AD142440F7C100D06BE8 /* CalendarVC.swift */,
+			);
+			path = ProgressCalendar;
+			sourceTree = "<group>";
+		};
+		848399262475B5FC00DB1A49 /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				84CDB2652475B748001DFD8C /* Stats.storyboard */,
+				84CDB2672475BC98001DFD8C /* PlainStatsCell.swift */,
+				848399272475B61A00DB1A49 /* PlainStatsVC.swift */,
+				8468AD18244100CE00D06BE8 /* ProgressCalendar */,
+			);
+			path = Stats;
+			sourceTree = "<group>";
+		};
+		849FB8CE23D8ADAC00884FFC /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				849FB8CF23D8ADBC00884FFC /* ui.swift */,
+				849FB8D123D8B09900884FFC /* uicolor.swift */,
+				845180FD23F5ADB500A52F32 /* notifications.swift */,
+				849FE817244A39AF00DCE2D9 /* PublishedProperties_CombineLike.swift */,
+				84CDB26C2475CB6D001DFD8C /* secondsToHMS.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		84BF260B24461A7800873D4B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				842D2D06242FE6C900938439 /* MeditationSession.swift */,
+				84EC8BC32452033800CCCB53 /* MeditationSession+API.swift */,
+				84EC8BC52452034D00CCCB53 /* MeditationSession+conversions.swift */,
+				84EC8BC924520FB500CCCB53 /* MeditationSession+statistics.swift */,
+				842E94BD2458552E003287CE /* MeditationSession+example.swift */,
+				84EC8BC7245207D000CCCB53 /* SettingsCareTaker.swift */,
+				84F86FFD2445E29200089304 /* SettingsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84CDB2692475C3AA001DFD8C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				84CDB26A2475C3D3001DFD8C /* SessionChart.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EEF05075C5B9BD6D2ED3B781 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A58FA966DA9EA7210E2103F8 /* Pods-eeg_meditation.debug.xcconfig */,
+				FE4A730A200DC0283FBD6D1A /* Pods-eeg_meditation.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8433746923701F4200737FC6 /* eeg_meditation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8433748123701F4300737FC6 /* Build configuration list for PBXNativeTarget "eeg_meditation" */;
+			buildPhases = (
+				2791EE11AA11F5F3C545CD1D /* [CP] Check Pods Manifest.lock */,
+				8433746623701F4200737FC6 /* Sources */,
+				8433746723701F4200737FC6 /* Frameworks */,
+				8433746823701F4200737FC6 /* Resources */,
+				2A7633C337E213C4776B7F9A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = eeg_meditation;
+			productName = eeg_meditation;
+			productReference = 8433746A23701F4200737FC6 /* EEGM DEV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8433746223701F4200737FC6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Alex Lokk";
+				TargetAttributes = {
+					8433746923701F4200737FC6 = {
+						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1140;
+					};
+				};
+			};
+			buildConfigurationList = 8433746523701F4200737FC6 /* Build configuration list for PBXProject "eeg_meditation" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8433746123701F4200737FC6;
+			productRefGroup = 8433746B23701F4200737FC6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8433746923701F4200737FC6 /* eeg_meditation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8433746823701F4200737FC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8433747D23701F4300737FC6 /* LaunchScreen.storyboard in Resources */,
+				8433747A23701F4300737FC6 /* Assets.xcassets in Resources */,
+				84CDB2662475B748001DFD8C /* Stats.storyboard in Resources */,
+				8433747523701F4200737FC6 /* Main.storyboard in Resources */,
+				8406F81324533E810099A2E2 /* Help.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2791EE11AA11F5F3C545CD1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-eeg_meditation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A7633C337E213C4776B7F9A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eeg_meditation/Pods-eeg_meditation-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eeg_meditation/Pods-eeg_meditation-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-eeg_meditation/Pods-eeg_meditation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8433746623701F4200737FC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				845180FE23F5ADB500A52F32 /* notifications.swift in Sources */,
+				84A7FFE623F5BD9400BE48EC /* HeadsetControllerDelegate.swift in Sources */,
+				84F86FFE2445E29200089304 /* SettingsModel.swift in Sources */,
+				8406F817245345730099A2E2 /* CalendarHeaderView.swift in Sources */,
+				84A3A993245781B80030388A /* MWMSdkStub.m in Sources */,
+				84891E30244B235D00A5ABBE /* MainVC+meditationSessionActions.swift in Sources */,
+				8433747223701F4200737FC6 /* MainVC.swift in Sources */,
+				8422B31A274EA0730069BF71 /* vasyl.swift in Sources */,
+				84BBC7FF286DD3BF000C5AAF /* Constants.swift in Sources */,
+				84EC8BC62452034D00CCCB53 /* MeditationSession+conversions.swift in Sources */,
+				849FA3672450D2BD00420D00 /* MainVC+segueing.swift in Sources */,
+				849FB8D023D8ADBC00884FFC /* ui.swift in Sources */,
+				84D18C3B24A0F12D0085E10A /* SplashScreenVC.swift in Sources */,
+				84645B5224538203007DEB95 /* HelpVC.swift in Sources */,
+				84EC8BCA24520FB500CCCB53 /* MeditationSession+statistics.swift in Sources */,
+				84B1124E24A0EB6700A13ABF /* MainVC+sharing.swift in Sources */,
+				842D2D07242FE6C900938439 /* MeditationSession.swift in Sources */,
+				8468AD152440F7C100D06BE8 /* CalendarVC.swift in Sources */,
+				8468AD132440F66700D06BE8 /* CalendarDateCell.swift in Sources */,
+				840CB5FD24531A6300399ACA /* Settings1VC.swift in Sources */,
+				84EC8BC42452033800CCCB53 /* MeditationSession+API.swift in Sources */,
+				8496D19E23E889BD00156BAD /* DistractionCounterVC.swift in Sources */,
+				8451810023F5B55900A52F32 /* Permissions.swift in Sources */,
+				84C14AD12444DDBA009B416C /* SimpleTouchGestureRecognizer.swift in Sources */,
+				8446A42423F4880300274E52 /* HeadsetController.swift in Sources */,
+				8433747823701F4200737FC6 /* eeg_meditation.xcdatamodeld in Sources */,
+				84891E28244B21AA00A5ABBE /* MainVC+showChart.swift in Sources */,
+				84891E2E244B230E00A5ABBE /* MainVC+timer.swift in Sources */,
+				84891E2A244B221B00A5ABBE /* MainVC+HeadsetControllerDelegate.swift in Sources */,
+				842850C82774B84600B6AD1E /* NewFormulaVC.swift in Sources */,
+				848399282475B61A00DB1A49 /* PlainStatsVC.swift in Sources */,
+				84EC8BC8245207D000CCCB53 /* SettingsCareTaker.swift in Sources */,
+				8433746E23701F4200737FC6 /* AppDelegate.swift in Sources */,
+				84891E2C244B22BE00A5ABBE /* MainVC+clock.swift in Sources */,
+				84CDB26D2475CB6D001DFD8C /* secondsToHMS.swift in Sources */,
+				849FB8D223D8B09900884FFC /* uicolor.swift in Sources */,
+				842E94BE2458552E003287CE /* MeditationSession+example.swift in Sources */,
+				84F86FFC2445E27200089304 /* SoundCenter.swift in Sources */,
+				849FE818244A39AF00DCE2D9 /* PublishedProperties_CombineLike.swift in Sources */,
+				84CDB2682475BC98001DFD8C /* PlainStatsCell.swift in Sources */,
+				8E77F75F0105BFBD47E2D9BB /* AssetsUtils.swift in Sources */,
+				84A3A995245786C80030388A /* MainVC+debug.swift in Sources */,
+				84CDB26B2475C3D3001DFD8C /* SessionChart.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8433747323701F4200737FC6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8433747423701F4200737FC6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8433747B23701F4300737FC6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8433747C23701F4300737FC6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8433747F23701F4300737FC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8433748023701F4300737FC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8433748223701F4300737FC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A58FA966DA9EA7210E2103F8 /* Pods-eeg_meditation.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = eeg_meditation/Base/eeg_meditation.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 21;
+				DEVELOPMENT_TEAM = 48XP22UCB6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = eeg_meditation/Base/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MWMSdk",
+					"$(PROJECT_DIR)/MWMSdk/iOS",
+				);
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MWMSdk/iOS",
+				);
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MWMSdk/iOS_simulator",
+				);
+				"LIBRARY_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MWMSdk/MacOS",
+				);
+				MARKETING_VERSION = 0.4.2;
+				PRODUCT_BUNDLE_IDENTIFIER = org.highcat.EEGMeditation.DEV;
+				PRODUCT_NAME = "EEGM DEV";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8433748323701F4300737FC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE4A730A200DC0283FBD6D1A /* Pods-eeg_meditation.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = eeg_meditation/Base/eeg_meditation.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 21;
+				DEVELOPMENT_TEAM = 48XP22UCB6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = eeg_meditation/Base/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MWMSdk",
+					"$(PROJECT_DIR)/MWMSdk/iOS",
+				);
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MWMSdk/iOS",
+				);
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MWMSdk/iOS_simulator",
+				);
+				"LIBRARY_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MWMSdk/MacOS",
+				);
+				MARKETING_VERSION = 0.4.2;
+				PRODUCT_BUNDLE_IDENTIFIER = org.highcat.EEGMeditation;
+				PRODUCT_NAME = "EEG Meditation";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8433746523701F4200737FC6 /* Build configuration list for PBXProject "eeg_meditation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8433747F23701F4300737FC6 /* Debug */,
+				8433748023701F4300737FC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8433748123701F4300737FC6 /* Build configuration list for PBXNativeTarget "eeg_meditation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8433748223701F4300737FC6 /* Debug */,
+				8433748323701F4300737FC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8433747623701F4200737FC6 /* eeg_meditation.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8433747723701F4200737FC6 /* eeg_meditation.xcdatamodel */,
+			);
+			currentVersion = 8433747723701F4200737FC6 /* eeg_meditation.xcdatamodel */;
+			path = eeg_meditation.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8433746223701F4200737FC6 /* Project object */;
+}
