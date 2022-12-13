@@ -14,6 +14,10 @@ These headsets are chosen as the best quality and most affordable. Initially, we
 
 [Check it on NeuroSky Store](https://store.neurosky.com/products/eeg-meditation-ios)
 
+Watch the demo:
+
+[![EEG Meditation Demo](https://img.youtube.com/vi/IGPIW3q8_1U/0.jpg)](https://www.youtube.com/watch?v=IGPIW3q8_1U)
+
 # Features
 
 * Meditation recognition: our own Formula, legacy NeuroSky algorithm. The former is best for serious meditation. The latter provides handicap and is intended for games. Choose & compare!
